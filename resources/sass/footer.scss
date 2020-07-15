@@ -1,0 +1,34 @@
+@import "./variables";
+@import "./mixins";
+.footer_area {
+    padding: 120px 0;
+    position: relative;
+    .footer_logo {
+        text-align: center;
+        @include font_style(15px, null, $roboto-sans-serif);
+        h4 {
+            @include font_style(20px, $black, $rubik-sans-serif);
+            margin: 35px 0 8px;
+        }
+        .copyright {
+            @include font_style(15px, $white_77, $roboto-sans-serif);
+            padding: 0px 15px;
+        }
+        .footer_social {
+            align-items: center;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 25px 0 30px;
+            a {
+                color: $grey_78;
+                padding: 0 20px;
+                @include font_style(25px);
+                @include common_transition();
+                &:hover {
+                    color: $hover_color_85;
+                }
+            }
+        }
+    }
+}

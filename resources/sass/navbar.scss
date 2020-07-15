@@ -1,0 +1,40 @@
+@import "./variables.scss";
+@import "./mixins";
+.custom_navbar {
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    @include font_style(15px);
+    .logo {
+        margin-right: 16px;
+        padding: 5px 0px;
+        img {
+            vertical-align: middle;
+            border-style: none;
+        }
+    }
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        li {
+            list-style: none;
+            margin-right: 45px;
+            &:last-child {
+                margin-right: 0;
+            }
+            a {
+                text-decoration: none;
+                text-transform: uppercase;
+                padding: 0;
+                @include font_style(14px, $black, $rubik-sans-serif, $medium, 100px);
+                @include common_transition();
+                &:hover,
+                &.active {
+                    color: $hover_color_44;
+                }
+            }
+        }
+    }
+}

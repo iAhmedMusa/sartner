@@ -1,0 +1,5 @@
+@import "./variables";
+@import "./mixins";
+body {
+    @include font_style(15px, $white_77, $roboto-sans-serif, $regular, 26px);
+}
