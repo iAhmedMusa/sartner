@@ -3,3 +3,22 @@
 body {
     @include font_style(15px, $white_77, $roboto-sans-serif, $regular, 26px);
 }
+
+p,
+h1,
+h2 {
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+dl,
+ol,
+ul {
+    margin-bottom: 0;
+}

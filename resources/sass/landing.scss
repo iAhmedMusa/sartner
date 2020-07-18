@@ -1,5 +1,41 @@
 @import "./variables";
 @import "./mixins";
+.global-button {
+    @include font_style(14px, $white, $rubik-sans-serif, $medium, 46px, 0);
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 0 42px;
+    margin: 0 20px 0 0;
+    display: inline-block;
+    border-radius: 5px;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee);
+    border: double 2px transparent;
+    box-shadow: 0 10px 30px rgba(118, 85, 225, .3);
+    border: 1px solid transparent;
+    @include common_transition();
+    &:hover {
+        color: $black;
+        background: $white;
+        background-image: none;
+        border: 1px solid $hover_color_85;
+    }
+    &.global-reverse-hover {
+        color: $black;
+        background: $white;
+        background-image: none;
+        border: 1px solid $hover_color_85;
+        &:hover {
+            background: none;
+            border: 1px solid transparent;
+            background-image: linear-gradient(to right, #4458dc 0%, #854fee 100%), radial-gradient(circle at top left, #4458dc, #854fee) !important;
+            color: $white;
+        }
+    }
+}
+
 .hello-wrapper {
     background-image: url('../../images/home-banner.png');
     background-repeat: no-repeat;
@@ -13,27 +49,119 @@
         $roboto-sans-serif);
         display: flex;
         justify-content: space-between;
-        .hello-title {
-            // display: flex;
-            // align-items: center;
-            // justify-content: flex-start;
-            h3 {}
+        .left-side-items {
+            text-align: left;
+            .hello-title {
+                h3 {
+                    @include font_style(40px,
+                    null,
+                    $rubik-sans-serif,
+                    $medium);
+                    margin-bottom: 0 0 20px;
+                    text-transform: uppercase!important;
+                }
+            }
             hr {
                 height: 5px;
                 width: 300px;
                 // border: 1px solid red;
             }
-        }
-        h1 {}
-        h2 {}
-        .button-block {
-            a {}
-        }
-        .right-side-img {
-            img {
-                height: auto;
-                max-width: 100%;
+            h1 {
+                @include font_style(70px,
+                null,
+                $rubik-sans-serif,
+                null,
+                60px);
+                margin: 20px 0 25px;
             }
+            h5 {
+                @include font_style(24px,
+                null,
+                $rubik-sans-serif);
+                margin-bottom: 35px;
+            }
+            .button-block {}
+        }
+        .right-side-items {
+            img {
+                max-width: 445px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.about-area-secton {
+    margin-top: 200px;
+    .items-section {
+        @include font_style(15px,
+        $black,
+        $roboto-sans-serif);
+        display: flex;
+        justify-content: space-between;
+        .left-side-items {
+            margin-bottom: 95px;
+            padding: 0 15px;
+            img {
+                max-width: 445px;
+                height: auto;
+            }
+        }
+        .right-side-items {
+            max-width: 445px;
+            height: auto;
+            h2 {
+                @include font_style(36px,
+                $black,
+                $rubik-sans-serif,
+                $bold,
+                50px);
+                margin-bottom: 15px;
+                text-transform: uppercase;
+            }
+            p {
+                margin-bottom: 20px;
+                @include font_style(15px,
+                $white_77,
+                $rubik-sans-serif);
+            }
+            .download-button-block {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.brand-area-section .container {
+    width: 100%;
+    margin-top: 200px;
+    display: flex;
+    .left-block-items {
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+        .item {
+            width: calc(33.33% - 13.33px);
+            margin-right: 20px;
+            margin-bottom: 20px;
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            img {}
+        }
+    }
+    .right-block-items {
+        // background: #000;
+        width: 50%;
+        .top-block {
+            .top-left-block {}
+            .top-right-block {}
+        }
+        .bottom-block {
+            .bottom-left-block {}
+            .bottom-right-block {}
         }
     }
 }
