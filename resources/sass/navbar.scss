@@ -7,6 +7,9 @@
     display: flex;
     justify-content: space-between;
     @include font_style(15px);
+    // position: fixed;
+    // z-index: 999;
+    // background-color: white;
     .logo {
         margin-right: 16px;
         padding: 5px 0px;

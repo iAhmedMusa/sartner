@@ -15,6 +15,8 @@ class RouteServiceProvider extends ServiceProvider
      * @var string
      */
     protected $namespace = 'App\Http\Controllers';
+    
+    protected $frontend = 'App\Http\Controllers\FrontControllers';
 
     /**
      * The path to the "home" route for your application.
@@ -45,6 +47,8 @@ class RouteServiceProvider extends ServiceProvider
         $this->mapApiRoutes();
 
         $this->mapWebRoutes();
+        
+        $this->mapFrontendRoutes();
 
         //
     }
@@ -61,6 +65,13 @@ class RouteServiceProvider extends ServiceProvider
         Route::middleware('web')
             ->namespace($this->namespace)
             ->group(base_path('routes/web.php'));
+    }
+
+    protected function mapFrontendRoutes()
+    {
+        Route::middleware('web')
+            ->namespace($this->frontend)
+            ->group(base_path('routes/frontend.php'));
     }
 
     /**

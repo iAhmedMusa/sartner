@@ -1,5 +1,7 @@
-@extends('front.layouts.app') @push('custom-style')
-<link rel="stylesheet" href="{{ asset('css/landing.css') }}"> @endpush @section('content')
+@extends('front.layouts.app')
+@push('custom-style')
+<link rel="stylesheet" href="{{ asset('css/landing.css') }}"> @endpush
+@section('content')
 <div class="hello-wrapper">
     <div class="container">
         <div class="hello-section">
@@ -49,8 +51,8 @@
 
 <div class="brand-area-section">
     <div class="container">
-        
         <div class="left-block-items">
+            <div class="all-items">
             <div class="item">
                 <img src="{{ asset('../../images/logo1.png') }}" alt="brand-icon">
             </div>
@@ -61,41 +63,43 @@
                 <img src="{{ asset('../../images/logo3.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo1.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo4.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo2.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo5.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo3.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo6.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo1.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo7.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo2.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo8.png') }}" alt="brand-icon">
             </div>
             <div class="item">
-                <img src="{{ asset('../../images/logo3.png') }}" alt="brand-icon">
+                <img src="{{ asset('../../images/logo9.png') }}" alt="brand-icon">
             </div>
         </div>
+        </div>
         <div class="right-block-items">
-            <div class="top-block">
-                <div class="top-left-block">
-
-                </div>
-                <div class="top-right-block">
-
-                </div>
-            </div>
-            <div class="bottom-block">
-                <div class="bottom-left-block">
-                    <img src="" alt="mobile_icon">
-                </div>
-                <div class="bottom-right-block">
-                    <h1>BOTTOM RIGHT BLOCK</h1>
-                </div>
-            </div>
+          <div class="portfolio-content">
+              <div class="experience">
+                <span class="number">10</span>
+                <span class="text">Years<br>Experience<br>Working</span>
+              </div>
+              <div class="contact">
+                <span class="fa fa-phone"></span>
+                <span class="phone-number">
+                    <span class="call-us">
+                        CALL US NOW
+                    </span>
+                    <h3>
+                        (+1)-800-555-6789
+                    </h3>
+                </span>
+              </div>
+          </div>
         </div>
     </div>
 </div>

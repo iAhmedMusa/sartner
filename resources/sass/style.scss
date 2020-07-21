@@ -2,12 +2,12 @@
 @import "./mixins";
 body {
     @include font_style(15px, $white_77, $roboto-sans-serif, $regular, 26px);
+    background: url('../../images/body-bg.png') no-repeat center;
 }
 
-p,
-h1,
-h2 {
-    margin-bottom: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -15,10 +15,4 @@ a {
     &:hover {
         text-decoration: none;
     }
-}
-
-dl,
-ol,
-ul {
-    margin-bottom: 0;
 }

@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('front.pages.landingpage');
-})->name('home');
+Route::get('/welcome', function () {
+    return view('welcome');
+});
 
