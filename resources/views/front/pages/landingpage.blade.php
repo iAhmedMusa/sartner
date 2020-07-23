@@ -104,7 +104,38 @@
     </div>
 </div>
 
+<div class="features-area">
+    <div class="container"> 
+        <div class="features-area-heading-text">
+            <div class="title-text">
+                <h2>service offers</h2>
+                <p>Is give may shall likeness made yielding spirit a itself togeth created after sea <br>
+                    is in beast beginning signs open god you're gathering ithe</p>
+            </div>
+        </div>
 
-
-
+        <div class="all-items">
+            <div class="item">
+                <img src="{{ asset('../../images/s1.png') }}" alt="service-icon">
+                <h4>Wp developing</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+            <div class="item">
+                <img src="{{ asset('../../images/s2.png') }}" alt="service-icon">
+                <h4>UI/ux design</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+            <div class="item">
+                <img src="{{ asset('../../images/s3.png') }}" alt="service-icon">
+                <h4>Web design</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+            <div class="item">
+                <img src="{{ asset('../../images/s4.png') }}" alt="service-icon">
+                <h4>seo optimize</h4>
+                <p>Creeping for female light years that lesser can't evening heaven isn't bearing tree</p>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

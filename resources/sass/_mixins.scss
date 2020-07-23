@@ -252,9 +252,9 @@
     }
     @if $weight {
         font-weight: $weight;
-        @if $weight==bold {
-            -webkit-font-smoothing: antialiased;
-        }
+        // @if $weight==bold {
+        //     -webkit-font-smoothing: antialiased;
+        // }
     }
     @if $lineHeight {
         line-height: $lineHeight;
