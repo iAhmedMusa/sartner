@@ -51,8 +51,8 @@
 
 <div class="brand-area-section">
     <div class="container">
-        <div class="left-block-items">
-            <div class="all-items">
+        <div class="left-block">
+            <div class="left-block-all-items">
             <div class="item">
                 <img src="{{ asset('../../images/logo1.png') }}" alt="brand-icon">
             </div>
@@ -82,7 +82,7 @@
             </div>
         </div>
         </div>
-        <div class="right-block-items">
+        <div class="right-block">
           <div class="portfolio-content">
               <div class="experience">
                 <span class="number">10</span>
@@ -107,14 +107,13 @@
 <div class="features-area">
     <div class="container"> 
         <div class="features-area-heading-text">
-            <div class="title-text">
-                <h2>service offers</h2>
-                <p>Is give may shall likeness made yielding spirit a itself togeth created after sea <br>
-                    is in beast beginning signs open god you're gathering ithe</p>
-            </div>
+            <h2>service offers</h2>
+            <p>Is give may shall likeness made yielding spirit a itself togeth created after sea <br>
+                is in beast beginning signs open god you're gathering ithe
+            </p>
         </div>
 
-        <div class="all-items">
+        <div class="features-area-all-items">
             <div class="item">
                 <img src="{{ asset('../../images/s1.png') }}" alt="service-icon">
                 <h4>Wp developing</h4>
@@ -138,4 +137,21 @@
         </div>
     </div>
 </div>
+
+<div class="testimonial-area">
+    <div class="container">
+        <div class="testimonial-area-heading-text">
+            <h2>client say about me</h2>
+            <p>Is give may shall likeness made yielding spirit a itself togeth created after sea is in beast <br>
+                beginning signs open god you're gathering ithe</p>
+        </div>
+
+        <div class="testimonial-area-all-items">
+            <div class="item">
+                
+            </div>
+        </div>
+    </div>
+</div>
+
 @endsection
